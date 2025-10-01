@@ -62,8 +62,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 result.setText((text1 * text2).toString())
             }
             R.id.divide -> {
-                result.setText((text1 / text2).toString())
+                if (text2 == 0.0) {
+                    result.setText("Invalid input")
+                }
+                else
+                    result.setText((text1 / text2).toString())
             }
+
             else -> {
                 result.setText("0")
             }

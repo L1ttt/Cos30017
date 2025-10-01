@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Asignment1</string>
+    <string name="score">ĐIỂM</string>
+    <string name="climb">Trèo</string>
+    <string name="fall">Ngã</string>
+    <string name="reset">Đặt lại</string>
+    <string name="lang">en</string>
+</resources>
