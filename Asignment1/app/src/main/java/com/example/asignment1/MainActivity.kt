@@ -95,7 +95,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtra(EXTRA_SCORE, score)
         intent.putExtra(EXTRA_FALL_STATE, fall)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK) // Clear back stack
+        // Prevent navigate back to the previous activity
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
         finish()
         Log.d("MainActivity", " $language")

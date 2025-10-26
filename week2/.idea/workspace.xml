@@ -22,55 +22,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93874021-3e70-40a8-83dd-593b88c20c42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/My-application/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/appInsightsSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/deviceManager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/java/com/example/myapplication/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/app/src/test/java/com/example/myapplication/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/My-application/settings.gradle.kts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication2/app/src/main/res/layout/recycle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication2/app/src/main/res/layout/templet_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication2/app/src/main/res/layout/templet_re.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication3/app/src/main/res/drawable/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication3/app/src/main/res/drawable/download1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyApplication3/app/src/main/res/layout/templet_re.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Week3/app/src/main/res/layout/template_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asignment1/app/src/main/java/com/example/asignment1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Asignment1/app/src/main/java/com/example/asignment1/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/app/src/main/java/com/example/week3/adminActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/app/src/main/java/com/example/week3/adminActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/app/src/main/res/layout/admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/app/src/main/res/layout/admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,18 +68,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "L1ttt"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;L1ttt&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/L1ttt/Cos30017.git",
-    "accountId": "c4078ac9-bee7-4e22-87cc-5ca0a3371c01"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/L1ttt/Cos30017.git&quot;,
+    &quot;accountId&quot;: &quot;c4078ac9-bee7-4e22-87cc-5ca0a3371c01&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -129,20 +91,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/admin/Documents/GitHub/Cos30017/week2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Documents/GitHub/Cos30017/week2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="week2.app" />
