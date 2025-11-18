@@ -3,6 +3,7 @@ package com.example.assignment2
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -39,7 +40,8 @@ class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        val callback = object : OnBackPressedCallback(true /* enabled by default */) {
+        Log.d("DetailsActivity", "onCreate called")
+        val callback = object : OnBackPressedCallback(true ) {
             override fun handleOnBackPressed() {
                 AlertDialog.Builder(this@DetailsActivity)
                     .setTitle("Cancel Changes?")
@@ -53,8 +55,6 @@ class DetailsActivity : AppCompatActivity() {
             }
         }
         onBackPressedDispatcher.addCallback(this, callback)
-        // --- END OF NEW CODE ---
-        // Link the XML views to Kotlin objects
         detailItemImg = findViewById(R.id.detailItemImg)
         detailItemName = findViewById(R.id.detailItemName)
         detailItemRate = findViewById(R.id.detailItemRate)
@@ -111,6 +111,7 @@ class DetailsActivity : AppCompatActivity() {
                 Toast.makeText(this, "Successfully borrowed for $borrowedMonths months", Toast.LENGTH_SHORT).show()
                 setResult(Activity.RESULT_OK, resultIntent)
                 finish()
+                Log.d("DetailsActivity", "Updated instrument: $item")
             }
         }
     }
@@ -119,7 +120,7 @@ class DetailsActivity : AppCompatActivity() {
         creditText.text = "Credit: $$credit"
         detailItemName.text = item.name
         detailItemAttribute.text = "Attribute: ${item.attribute}"
-        detailItemRate.text = "Rate: ${item.rating}"
+        detailItemRate.text = "Rate: ${item.rating} star"
         detailItemType.text = "Type: ${ item.instrumentType }"
         detailItemModel.text = "Model: ${item.instrumentModel}"
         detailItemColor.text = "Color: ${item.instrumentColor}"

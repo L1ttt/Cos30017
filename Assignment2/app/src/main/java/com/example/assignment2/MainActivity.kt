@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 if (updatedInstrument != null) {
                     instrumentList[currentIndex] = updatedInstrument
                     updateInstrument()
+                    Log.d("MainActivity", "Updated instrument: $updatedInstrument")
                 }
             }
         }
@@ -52,6 +53,8 @@ class MainActivity : AppCompatActivity() {
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
                 setContentView(R.layout.activity_main)
+                Log.d("MainActivity", "onCreate called")
+
 
                 // Initialize views
                 creditText = findViewById(R.id.credit)
@@ -69,6 +72,8 @@ class MainActivity : AppCompatActivity() {
 
                 // Set initial instrument
                 updateInstrument()
+                Log.d("MainActivity", "Initial instrument: ${instrumentList[currentIndex]}")
+
 
                 // pre/next btn
                 btnPrevious.setOnClickListener {
@@ -97,13 +102,14 @@ class MainActivity : AppCompatActivity() {
                         else -> null
                     }
 
-                    if (selectedType == null) {
-                        Toast.makeText(this, "Please select a type first!", Toast.LENGTH_SHORT)
+
+                     if (instrumentList[currentIndex].borrowedMonths !=0){
+                        Toast.makeText(this, "Already borrowed!", Toast.LENGTH_SHORT)
                             .show()
                         return@setOnClickListener
                     }
-                    else if (instrumentList[currentIndex].borrowedMonths !=0){
-                        Toast.makeText(this, "Already borrowed!", Toast.LENGTH_SHORT)
+                    else if (selectedType == null) {
+                        Toast.makeText(this, "Please select a type first!", Toast.LENGTH_SHORT)
                             .show()
                         return@setOnClickListener
                     }
@@ -123,14 +129,17 @@ class MainActivity : AppCompatActivity() {
             private fun updateInstrument() {
                 if (instrumentList[currentIndex].borrowedMonths != 0){
                     btnBorrow.text = "Borrowed"
+                    //btnBorrow.isEnabled = false
                     btnBorrow.setBackgroundColor(getColor(R.color.grey))
                     itemRadio.visibility = RadioGroup.GONE
                     itemBorrowed.visibility = TextView.VISIBLE
                     itemBorrowed.text = "Borrowed for ${instrumentList[currentIndex].borrowedMonths} months"
+
                 }
                 else{
                     btnBorrow.text = "Borrow"
                     btnBorrow.setBackgroundColor(getColor(R.color.teal))
+                    //btnBorrow.isEnabled = true
                     itemRadio.visibility = RadioGroup.VISIBLE
                     itemBorrowed.visibility = TextView.GONE
                 }

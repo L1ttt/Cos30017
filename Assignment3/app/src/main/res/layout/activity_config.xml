@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConfigActivity"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/back_icon">
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Configuration"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical"></TextView>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/delete_icon"></ImageButton>
+    </LinearLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/input"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/pointInput"
+        android:inputType="numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/input"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        ></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/decreaseInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/input"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Decrease"
+                android:textSize="20dp"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/increaseInput"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/input"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="20dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increase"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/saveInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:backgroundTint="@color/red_500"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        ></Button>
+
+
+
+
+</LinearLayout>
