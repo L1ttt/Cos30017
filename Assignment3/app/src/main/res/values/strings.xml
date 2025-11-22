@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Assignment3</string>
+    <!-- Các chuỗi khác của bạn -->
+
+    <!-- MỚI: Mảng chuỗi cho Spinner chọn số lượng xúc xắc -->
+    <string-array name="dice_options_array">
+        <item>1 Dice</item>
+        <item>2 Dice</item>
+        <item>3 Dice</item>
+        <item>4 Dice</item>
+    </string-array>
 </resources>

@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".ConfigActivity"/>
         <activity android:name=".SettingActivity"/>
+        <activity android:name=".DiceActivity"/>
     </application>
 
 </manifest>

@@ -18,7 +18,8 @@ import com.google.android.flexbox.FlexboxLayout
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File
-data class Player(var name: String, var score: Int, var color: Int,var decrease:Int,var increase:Int )
+import java.io.Serializable
+data class Player(var name: String, var score: Int, var color: Int,var decrease:Int,var increase:Int ) : Serializable
 private var colorList =listOf(
     R.color.brown_500,
     R.color.indigo_500,
@@ -50,16 +51,17 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnAddBlock: ImageButton
 
     private lateinit var tvTotalScore: TextView
+    private lateinit var diceBtn: LinearLayout
 
     private lateinit var settingBtn: LinearLayout
-
-
 
     private val players = mutableListOf<Player>()
     private val cardViews = mutableListOf<Pair<Player, android.view.View>>()
     private val fileName = "score_data.json"
     private var sort = "none"
     private var header = "total"
+    private var dice = "dice"
+
     private val autoSortHandler = android.os.Handler(android.os.Looper.getMainLooper())
     private val autoSortRunnable = Runnable {
         if (sort != "none") {
@@ -97,13 +99,37 @@ class MainActivity : AppCompatActivity() {
             else if(action == "UPDATE_SETTING"){
                 sort = data.getStringExtra("sort").toString()
                 header = data.getStringExtra("header").toString()
+                dice = data.getStringExtra("dice").toString()
                 sort()
             }
+            else if (action == "NAV_SETTING"){
+                openSetting()
+            }
+            else if (action == "NAV_DICE"){
+                sort = data.getStringExtra("sort").toString()
+                header = data.getStringExtra("header").toString()
+                dice = data.getStringExtra("dice").toString()
+                sort()
+                openDice()
+            }
+        }
+        else{
+            sort()
         }
     }
-
-
-
+    private fun openSetting(){
+        val intent = Intent(this, SettingActivity::class.java)
+        intent.putExtra("sort",sort)
+        intent.putExtra("header",header)
+        intent.putExtra("dice",dice)
+        configActivityResultLauncher.launch(intent)
+    }
+    private fun openDice(){
+        val intent = Intent(this, DiceActivity::class.java)
+        intent.putExtra("dice",dice)
+        intent.putExtra("players", ArrayList(players))
+        configActivityResultLauncher.launch(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -113,14 +139,14 @@ class MainActivity : AppCompatActivity() {
         btnAddBlock = findViewById(R.id.btnAddBlock)
         btnDeleteAll = findViewById(R.id.btnDeleteAll)
         tvTotalScore = findViewById(R.id.tvTotalScore)
+        diceBtn = findViewById(R.id.nav_dice)
         settingBtn = findViewById(R.id.nav_setting)
 
+        diceBtn.setOnClickListener {
+            openDice()
+        }
         settingBtn.setOnClickListener {
-            val intent = Intent(this, SettingActivity::class.java)
-            intent.putExtra("sort",sort)
-            intent.putExtra("header",header)
-
-            configActivityResultLauncher.launch(intent)
+            openSetting()
         }
 
 
@@ -211,6 +237,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         tvTitle.setOnClickListener {
+            stopAutoSortTimer()
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Set Player Name")
 
@@ -229,6 +256,7 @@ class MainActivity : AppCompatActivity() {
             builder.show()
         }
         tvScore.setOnClickListener {
+            stopAutoSortTimer()
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Set Score")
 
